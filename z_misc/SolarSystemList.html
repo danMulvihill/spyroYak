@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>Planet & Moon Explorer</title>
+<link rel="stylesheet" href="../css/astro.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+</head>
+<body>
+<div data-role="page" id="page1" data-theme="a">
+	<div data-role="header">
+		<!--<a href="logout" data-icon="delete">Log out</a>-->
+		<h2>Planet & Moon<br>Explorer</h2>
+                 <a href="#about" data-icon="info" data-rel="dialog" data-transition="pop" data-role="button">About</a>
+		
+	</div>
+	<div data-role="content">
+
+		<ul data-role="listview">
+			
+			<li><h2>Rocky Planets</h2><p>Mercury, Venus, Earth &amp; Mars</p>
+				<ul data-theme="a">	
+				<li>Mercury
+				<li> <a href="http://www.google.com">Venus</a>
+				<li> <a href="#Earth" data-transition="slide">Earth</a> <span class="ui-li-count">1 A.U.</span>
+				<li> Mars
+				</ul>	
+			<li><h2>Asteroids</h2><p>Ceres, Vesta &amp; other small rocks
+				<ul data-theme="a">
+				<li>Vesta
+				<li>Juno
+				<li>Ceres
+				</ul>
+			<li><h2>Giant Gas Balls</h2><p>Jupiter, Saturn, Uranus &amp; Neptune</p>
+				<ul data-theme="a">
+				<li>Jupiter
+				<li>Saturn
+				<li>Uranus
+				<li>Neptune
+				</ul>
+			<li><h2>Kuiper Belt</h2><p>Pluto &amp; friends</p>
+				<ul data-theme="a">
+				<li>Pluto
+				</ul>
+			<li><h2>Oort Cloud</h2><p>Comets and other icy balls</p>
+		</ul>
+	</div>
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+             <li><a href="#" data-icon="home" class="ui-btn-active ui-state-persist">Summary</a></li>
+             <li><a href="#page2" data-icon="grid">Expand List</a></li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-theme="a">
+	<div data-role="header">
+		<!--<a href="logout" data-icon="delete">Log out</a>-->
+		<h2>Planet & Moon<br>Explorer</h2>
+                 <a href="#about" data-icon="info" data-rel="dialog" data-transition="pop" data-role="button">About</a>
+		
+	</div>
+	<div data-role="content">
+
+		<ul data-role="listview" data-filter="true">
+			
+			<li data-role="list-divider"><h2>Rocky Planets</h2>	
+				<li>Mercury
+				<li> Venus
+				<li> <a href="#Earth" data-transition="slide">Earth</a> <span class="ui-li-count">1 A.U.</span>
+				<li> Mars
+			<li data-role="list-divider"><h2>Asteroids</h2>
+				<li>Vesta
+				<li>Juno
+				<li>Ceres
+			<li data-role="list-divider"><h2>Giant Gas Balls</h2>
+				<li>Jupiter
+				<li>Saturn
+				<li>Uranus
+				<li>Neptune
+			<li data-role="list-divider"><h2>Kuiper Belt</h2>
+				<li>Pluto
+			<li data-role="list-diviver"><h2>Oort Cloud</h2>
+		</ul>
+	</div>
+	
+	
+	<div data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+         <li><a href="#page1" data-icon="home">Collapse List</a></li>
+         <li><a href="#" data-icon="grid" class="ui-btn-active ui-state-persist">List</a></li>
+        </ul>	
+     </div>
+	 </div>
+</div>
+
+
+<div data-role="page" id="about">       
+	<div data-role="header"><h1>About<br> Planet & Moon<br> Explorer</h1>
+	</div>
+	<div data-role="content">
+		
+		<p>Our solar system consists of planets, asteroids, comets, and other objects revolving around the Sun. Some of these objects have moons and other satellites that revolving around them. Much of what we know about the solar system (and beyond) comes from information gathered from telescopes, probes, and other instruments designed and built by Earthlings. Use this tool to learn a little about the planets and other revolving objects they explore.</p>
+                
+                <p>This is the mobile version of the <a href="http://spyroyak.com/astro/index.php?parent_id=10&region=All">Exploring the Solar System</a> website</p>
+         <a href="#page1" data-role="button">close</a>
+	</div>
+</div>
+
+
+<div data-role="page" id="Earth">
+  <div data-role="header">
+     
+    <h1>Planet & Moon Explorer</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" data-icon="arrow-l">Toward Sun</a></li>
+        <li><a href="#" data-icon="arrow-u">Satellites</a></li>
+        <li><a href="#" data-icon="arrow-r">Away from Sun</a></li>
+      
+        
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="content" data-theme="a">
+    <h2>Earth</h2>
+    <p>Distance from Sun: 92,752,000 miles
+    <br>Distance in A.U.: 1
+    <br>Diameter: 7874 miles</p>
+
+<p>
+		Earth is a strange planet where the chemical substance known as water can exist in three phases: solid, liquid, and gaseous. This turns out to be an ideal situation for sustaining weird gooey things known as organisms that come to life with a little spark. One of these organisms, known as humans, build instruments and spacecrafts that they use to explore space. Much of the information here comes from the work of these creatures.
+		</P>
+    
+    <a href="#planetInfo" data-rel="dialog" data-transition="pop" data-role="button">See images of Earth</a>
+   <a href="" data-rel="page" data-transition="slideUp" data-role="button">Explore Earth's satellites</a>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+  <div data-role="navbar">
+      
+       <ul>
+           <li><a href="#page1" data-icon="home">Summary</a></li>
+         <li><a href="#page2" data-icon="grid">List</a></li>
+         
+        
+      </ul>
+    </div> 
+    </div>
+</div> 
+<div data-role="page" id="planetInfo">
+	<div data-role="header"><h1>NASA image</h1>
+	</div>
+	<div data-role="content">
+		
+		<img src="http://grin.hq.nasa.gov/IMAGES/SMALL/GPN-2000-000928.jpg">
+		<a href="#Earth" data-role="button">close</a>
+	</div>
+</div>
+
+</body>
+</html>
